@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Villa8 Studios - Plano de Marketing</title>
+    
+    <!-- Meta Tags para Preview em Redes Sociais e WhatsApp -->
+    <meta property="og:title" content="Villa8 Studios - Plano de Marketing">
+    <meta property="og:description" content="Studios para alugar no Cabula. Estratégia completa de Marketing Orgânico e Tráfego Pago.">
+    <meta property="og:image" content="./img.VilaV8.jpeg">
+    <meta property="og:url" content="COLOQUE_SEU_LINK_AQUI_QUANDO_PUBLICAR">
+    <meta property="og:type" content="website">
+    
+    <!-- Meta Tags Específicas para o Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Villa8 Studios - Plano de Marketing">
+    <meta name="twitter:description" content="Studios para alugar no Cabula. Estratégia completa de Marketing Orgânico e Tráfego Pago.">
+    <meta name="twitter:image" content="./img.VilaV8.jpeg">
+
+    <!-- Importando as fontes do Google Fonts conforme a identidade visual -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* Variáveis de Cores e Tipografia */
+        :root {
+            --branco: #ffffff;
+            --cinza-claro: #f4f5f7;
+            --verde-esmeralda: #10b981; /* Verde vibrante/esmeralda */
+            --verde-profundo: #064e3b; /* Verde escuro */
+            --texto-escuro: #1f2937;
+            --texto-cinza: #4b5563;
+            
+            --fonte-titulo: 'Cormorant Garamond', serif;
+            --fonte-texto: 'Inter', sans-serif;
+        }
+
+        /* Reset e Base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--fonte-texto);
+            background-color: var(--cinza-claro);
+            color: var(--texto-escuro);
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: var(--fonte-titulo);
+            color: var(--verde-profundo);
+        }
+
+        /* Header / Hero Section */
+        header {
+            background-color: var(--branco);
+            padding: 4rem 2rem;
+            text-align: center;
+            border-bottom: 4px solid var(--verde-esmeralda);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .logo-text {
+            font-size: 3.5rem;
+            font-weight: 700;
+            letter-spacing: -1px;
+            margin-bottom: 0.5rem;
+        }
+
+        .logo-text span {
+            color: var(--verde-esmeralda);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: var(--texto-cinza);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Navegação por Abas (Dinâmico) */
+        .tabs-container {
+            max-width: 1000px;
+            margin: -2rem auto 2rem;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        .tab-btn {
+            background-color: var(--branco);
+            border: none;
+            padding: 1rem 2rem;
+            font-family: var(--fonte-texto);
+            font-weight: 600;
+            font-size: 1rem;
+            color: var(--verde-profundo);
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .tab-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        .tab-btn.active {
+            background-color: var(--verde-profundo);
+            color: var(--branco);
+        }
+
+        /* Conteúdo Principal */
+        main {
+            max-width: 1000px;
+            margin: 0 auto 4rem;
+            padding: 0 1rem;
+        }
+
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Cards Grid */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .card {
+            background: var(--branco);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-top: 4px solid var(--verde-esmeralda);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid var(--cinza-claro);
+            padding-bottom: 0.5rem;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        ul li::before {
+            content: "•";
+            color: var(--verde-esmeralda);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        /* Tabela de Linhas Editoriais */
+        .table-container {
+            background: var(--branco);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 1.5rem;
+            text-align: left;
+            border-bottom: 1px solid var(--cinza-claro);
+        }
+
+        th {
+            background-color: var(--verde-profundo);
+            color: var(--branco);
+            font-family: var(--fonte-titulo);
+            font-size: 1.3rem;
+        }
+
+        /* Funil de Vendas */
+        .funnel-stage {
+            background: var(--branco);
+            padding: 2rem;
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+            border-left: 6px solid var(--verde-esmeralda);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        
+        .funnel-topo { border-color: #10b981; } /* Esmeralda */
+        .funnel-meio { border-color: #059669; } /* Verde Médio */
+        .funnel-fundo { border-color: #064e3b; } /* Verde Profundo */
+
+        .funnel-stage h3 { border: none; padding: 0; margin-bottom: 0.5rem;}
+        .funnel-meta { font-size: 0.9rem; color: var(--texto-cinza); margin-bottom: 1.5rem; font-weight: 600; text-transform: uppercase;}
+
+        /* Rodapé */
+        footer {
+            background-color: var(--verde-profundo);
+            color: var(--branco);
+            text-align: center;
+            padding: 2rem;
+            font-family: var(--fonte-texto);
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: var(--verde-esmeralda);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-text">Villa<span>8</span></div>
+        <p>Studios para alugar no Cabula</p>
+        <h2 style="margin-top: 1rem; color: var(--texto-cinza);">Plano Estratégico de Marketing Digital</h2>
+    </header>
+
+    <!-- Navegação Dinâmica -->
+    <div class="tabs-container">
+        <button class="tab-btn active" onclick="openTab('marca')">Marca & Posicionamento</button>
+        <button class="tab-btn" onclick="openTab('organico')">Marketing Orgânico</button>
+        <button class="tab-btn" onclick="openTab('trafego')">Tráfego Pago</button>
+    </div>
+
+    <main>
+        <!-- ABA 1: Marca e Posicionamento -->
+        <section id="marca" class="tab-content active">
+            <div class="grid-2">
+                <div class="card">
+                    <h3>Ponto de Partida</h3>
+                    <p>O perfil está zerado (0 posts, 10 seguidores) e tem link direto para o WhatsApp. É a chance de lançar a marca com uma linha visual única e uma promessa clara: studio mobiliado para alugar, com água e luz individualizadas, em frente à UNEB e ao shopping Pátio Lua Cheia.</p>
+                </div>
+                <div class="card">
+                    <h3>Posicionamento</h3>
+                    <p>Morar bem, com praticidade, perto de tudo e cercado de verde. A Villa8 não vende só um quarto: vende uma rotina leve para quem estuda ou trabalha no Cabula.</p>
+                </div>
+                <div class="card">
+                    <h3>Tom de Voz</h3>
+                    <p>Acolhedor, direto e claro. Frases curtas, sem gírias em excesso, sempre com informação útil (preço, o que está incluso, como visitar).</p>
+                </div>
+                <div class="card">
+                    <h3>Identidade Visual</h3>
+                    <p><strong>Cores:</strong> Branco, Cinza Claro, Verde Esmeralda, Verde Profundo.</p>
+                    <p><strong>Tipografia:</strong> Cormorant Garamond (títulos) e Inter (textos).</p>
+                    <p><strong>Padrão:</strong> Fundo branco/cinza claro, detalhes em esmeralda, logo no canto inferior.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABA 2: Marketing Orgânico -->
+        <section id="organico" class="tab-content">
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Formato</th>
+                            <th>Conteúdo (Linha Editorial)</th>
+                            <th>Frequência</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Feed</strong></td>
+                            <td>Fotos do studio em luz natural, detalhes dos móveis, a vista verde, planta com medidas, carrossel "o que está incluso no aluguel".</td>
+                            <td>3x / semana</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Reels</strong></td>
+                            <td>Tour de 20s, "um dia no seu studio", caminhada até a UNEB e shopping, detalhes de água e luz individuais.</td>
+                            <td>2x / semana</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Stories</strong></td>
+                            <td>Enquetes, caixas de perguntas, bastidores, aviso de studio disponível.</td>
+                            <td>Diário</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="grid-3">
+                <div class="card">
+                    <h3>Engajamento</h3>
+                    <ul>
+                        <li>Série "Vizinhança" (tudo a poucos minutos do studio).</li>
+                        <li>Depoimentos curtos de moradores.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Parcerias Locais</h3>
+                    <ul>
+                        <li>Shopping Pátio Lua Cheia.</li>
+                        <li>Centros acadêmicos e atléticas da UNEB.</li>
+                        <li>Próximo ao Atacadão.</li>
+                        <li>Próximo ao metrô.</li>
+                        <li>A alguns km do Shopping Bela Vista!</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Otimização de Perfil</h3>
+                    <ul>
+                        <li>Bio focada em benefícios (Água/luz, mobiliado, UNEB).</li>
+                        <li>Destaques: Tour, Incluso, Valores, Dúvidas.</li>
+                        <li>Fixar 3 posts estratégicos.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABA 3: Tráfego Pago -->
+        <section id="trafego" class="tab-content">
+            <div class="card" style="margin-bottom: 2rem;">
+                <h3>Orçamento e Estratégia</h3>
+                <p><strong>Investimento:</strong> Valor hipotético de R$ 100,00 por semana! Durante um período de três meses. <br>
+                <strong>Divisão:</strong> Primeiro mês focado em seguidores. Segundo mês focado em engajamento, repetindo o ciclo até fechar os 90 dias!<br>
+                <strong>Objetivo Final (fazer a engrenagem girar):</strong> Páginas com quantidade significativa de seguidores e posts comentados tendem a crescer de forma natural.</p>
+            </div>
+
+            <div class="funnel-stage funnel-topo">
+                <h3>Topo de Funil: Descoberta</h3>
+                <div class="funnel-meta">Público: 18 a 35 anos, raio 8km do Cabula</div>
+                <p><strong>Criativo:</strong> Reels de 15 a 20s com tour. Stories com localização.<br>
+                <strong>Copy:</strong> "Studio mobiliado para alugar no Cabula, com água e luz só suas."<br>
+                <strong>CTA:</strong> Saiba mais</p>
+            </div>
+
+            <div class="funnel-stage funnel-meio">
+                <h3>Meio de Funil: Consideração</h3>
+                <div class="funnel-meta">Público: Retargeting (Vídeos 50%+, Perfil) + Pais/Responsáveis (35-55 anos)</div>
+                <p><strong>Criativo:</strong> Carrossel "O que está incluso" e Vídeo de morador.<br>
+                <strong>Copy:</strong> "Sem surpresa na conta no fim do mês: água e luz individualizadas no seu studio."<br>
+                <strong>CTA:</strong> Ver detalhes</p>
+            </div>
+
+            <div class="funnel-stage funnel-fundo">
+                <h3>Fundo de Funil: Conversão</h3>
+                <div class="funnel-meta">Público: Quem interagiu com WhatsApp / Lookalike 1% Qualificados</div>
+                <p><strong>Criativo:</strong> Imagem única com valor e botão de conversa direto.<br>
+                <strong>Copy:</strong> "Studio disponível para alugar em frente à UNEB. Fale agora e agende sua visita."<br>
+                <strong>CTA:</strong> Enviar mensagem</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Villa8 Studios &copy; 2026 - Cabula, Salvador, em frente à UNEB, Shopping Pátio Lua Cheia</p>
+        <p><a href="https://wa.me/71996310311" target="_blank">wa.me/71996310311</a> | Proposta Estratégica</p>
+    </footer>
+
+    <!-- Lógica Dinâmica (JavaScript) -->
+    <script>
+        function openTab(tabName) {
+            // Esconde todos os conteúdos
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => {
+                content.classList.remove('active');
+            });
+
+            // Remove a classe 'active' de todos os botões
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(button => {
+                button.classList.remove('active');
+            });
+
+            // Mostra o conteúdo atual e adiciona estado ativo ao botão clicado
+            document.getElementById(tabName).classList.add('active');
+            event.currentTarget.classList.add('active');
+        }
+    </script>
+</body>
+</html>
